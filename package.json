@@ -1,0 +1,12 @@
+{
+  "name": "event-booster",
+  "version": "1.1.0",
+  "description": "Find the best events around the world!",
+  "main": "script.js",
+  "scripts": {
+    "deploy": "git add . && git commit -m \"Deploy changes\" && git push origin main"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
