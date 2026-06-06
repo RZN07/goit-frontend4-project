@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang=en><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><title>Document</title><link rel=stylesheet href=goit-frontend4-project.5b8bb2ce.css><body>
+
+    <div class=container>
+        <h1>FIND BEST EVENTS AROUND THE WORLD</h1>
+        <div class=search-wrapper>
+            <input id=search-input class=search-input placeholder="Start searching">
+            <select class=country-select id=country-select>
+                <option value>Choose country</option>
+            </select>
+            <select id=category-select class=country-select>
+                <option value>All categories</option>
+            </select>
+            <select class=size-select id=size-select>
+                <option value=15>15 per page</option>
+                <option value=25 selected>25 per page</option>
+                <option value=35>35 per page</option>
+                <option value=45>45 per page</option>
+            </select>
+            <button class=search-btn id=search-btn>Search</button>
+            <button class=search-btn id=geo-btn style=background-color:#00bfff>📍Near you</button>
+            <button id=fav-toggle-btn class=fav-toggle-btn>♥ Favorites</button>
+
+        </div>
+        <div id=events-container class=events-grid></div>
+        <div id=pagination class=pagination></div>
+
+        <div class=backdrop id=backdrop>
+            <div class=modal>
+                <button class=modal-close-btn id=modal-close-btn>×</button>
+                <div class=modal-img-wrapper>
+                    <img class=modal-img id=modal-img alt=modal-image>
+                </div>
+                <div class=modal-content>
+                    <h2 class=modal-title id=modal-title>event title</h2>
+
+                    <div class=modal-info-row>
+                        <div class=modal-info-item>📅 <span id=modal-date></span></div>
+                        <div class=modal-info-item>⏰ <span id=modal-time></span></div>
+                        <div class=modal-info-item>📍 <span id=modal-venue></span></div>
+                    </div>
+                    <div class=modal-prices id=modal-prices></div>
+                    <div id=modal-weather></div>
+                    <p class=modal-desc id=modal-desc>No description</p>
+                    <div style=flex-wrap:wrap;gap:10px;display:flex>
+                        <a href=# target=_blank class=modal-action-btn id=modal-link>BUY TICKET</a>
+                        <button class=modal-action-btn id=modal-calendar-btn style=background-color:#444>📅
+                            ADD TO CALENDAR</button>
+                        <button class=modal-action-btn id=modal-map-btn style=background-color:#444>🗺️ SHOW
+                            ON MAP</button>
+                        <button class=modal-action-btn id=modal-share-btn style=background-color:#444>🔁
+                            SHARE WITH FRIENDS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <script src=goit-frontend4-project.d147f383.js type=module></script>
+
+
