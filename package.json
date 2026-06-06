@@ -1,12 +1,21 @@
 {
   "name": "event-booster",
   "version": "1.1.0",
-  "description": "Find the best events around the world!",
-  "main": "script.js",
+  "description": "Find the best events around the world today!",
+  "source": "index.html",
+  "homepage": "https://RZN07.github.io/goit-frontend4-project/",
   "scripts": {
-    "deploy": "git add . && git commit -m \"Deploy changes\" && git push origin main"
+    "dev": "parcel",
+    "start": "parcel",
+    "build": "parcel build index.html --no-cache --public-url ./ --dist-dir dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "parcel": "^2.13.3"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.9"
+  }
 }
